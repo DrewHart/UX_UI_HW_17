@@ -1,6 +1,15 @@
 body {
     background-color: F4F0ED;
 }
+h1 {
+    color: #AF3B6E;
+}
+h2 {
+    color:#AF3B6E;
+}
+h3 {
+    font: normal 300 16px "Merriweather Sans", sans-serif;
+}
 header {
     display: flex;
     background-color: #949ABF;
@@ -16,13 +25,18 @@ header {
 }
 .logo {
     display: flex;
-    grid-area: logo;
     object-fit: contain;
     max-width: 100%;
     min-width: 0;
     justify-self: left;
     flex: 1;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo img {
+    transition: 3s;
+}
+.logo img:hover {
+    transform: rotate(1440deg);
 }
 .navbar {
     display: flex;
@@ -60,6 +74,9 @@ header {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 14px;
 }
+.heroImg h3{
+    color:#AF3B6E;
+}
 .heroImg img {
     grid-area: portrait;
     max-width: 100%;
@@ -72,4 +89,37 @@ header {
 }
 .heroImg h3 {
     grid-area: designer;
+}
+.getintouch {
+    display: flex;
+    flex-direction:row;
+    background-color: #F7DD72;
+    position: absolute;
+    width: 66.25%;
+    height: 8%;
+    left: 16.875%;
+    right: 16.875%;
+    bottom: 40px;
+    padding: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    gap: 8px;
+}
+.getintouch img {
+    flex: 2;
+    object-fit: contain;
+    max-height: 100%;
+    min-width: 0;
+    justify-self: left;
+}
+.contact {
+    justify-self: right;
+    color:#AF3B6E;
+}
+.copyright {
+    font-style: italic;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom:0;
 }
